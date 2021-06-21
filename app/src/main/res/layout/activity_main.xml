@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/purple_200">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    style="@style/HeaderTEXTstyle"
+    tools:context=".MainActivity"
+    android:paddingLeft="8sp"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Name"
+        android:inputType="textCapWords"
+        style="@style/HeaderTEXTstyle"
+        android:id="@+id/name_id"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        style="@style/HeaderTEXTstyle"
+        android:text="TOPPINGS"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/whip_check"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whip Cream"
+        android:textSize="20dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        style="@style/HeaderTEXTstyle"
+        android:text="Quantity"
+        android:id="@+id/Quantity_text"
+        android:textAllCaps="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        style="@style/HeaderTEXTstyle"
+        android:orientation="horizontal" >
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:textSize="20dp"
+        android:onClick="Increment"/>
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:text="0"
+        android:textSize="25dp"
+        style="@style/HeaderTEXTstyle"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:onClick="submitOrder"/>
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="-"
+        android:textSize="20dp"
+        android:onClick="Decrement"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:text="Order"
+        android:onClick="submitOrder" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#26a69a</item>
+        <item name="colorPrimaryDark">#00766c</item>
+        <item name="android:colorAccent">#64d8cb</item>
+
+
+    </style>
+    <style name="HeaderTEXTstyle">
+        <item name="android:layout_marginBottom">16sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+</resources>
